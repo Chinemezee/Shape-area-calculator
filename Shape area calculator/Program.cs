@@ -43,6 +43,8 @@ namespace Shape_area_calculator
                 Console.WriteLine("The area of the circle is " + circleArea);
                     break;
             }
+            Console.WriteLine("...");
+            System.Threading.Thread.Sleep(500);
             Console.WriteLine("Thank you for using shape area cal");
             Console.ReadKey();
         }
