@@ -22,8 +22,9 @@ namespace Shape_area_calculator
 
             Console.WriteLine("For the area of the shape. Enter r for rectangle and c for circle");
             shape = Console.ReadLine();
-            if (shape == "r")
+            switch (shape)
             {
+                case "r":
                 Console.WriteLine("Enter the length of the rectangle");
                 rectangleLength = Convert.ToInt32(Console.ReadLine());
 
@@ -32,14 +33,17 @@ namespace Shape_area_calculator
 
                 rectangleArea = rectangleLength * rectangleWidth;
                 Console.WriteLine("The area of your rectangle " + rectangleArea);
-            }
-            else {
+                    break;
+
+                case "c":
                 Console.WriteLine("Enter radius of circle");
                 circleRadius = Convert.ToDouble(Console.ReadLine());
 
                 circleArea = circleRadius * circleRadius * pi;
                 Console.WriteLine("The area of the circle is " + circleArea);
+                    break;
             }
+            Console.WriteLine("Thank you for using shape area cal");
             Console.ReadKey();
         }
         
