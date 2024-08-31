@@ -39,7 +39,7 @@ namespace Shape_area_calculator
                 Console.WriteLine("Enter radius of circle");
                 circleRadius = Convert.ToDouble(Console.ReadLine());
 
-                circleArea = circleRadius * circleRadius * pi;
+                circleArea = circleRadius * circleRadius * Math.PI;
                 Console.WriteLine("The area of the circle is " + circleArea);
                     break;
             }
